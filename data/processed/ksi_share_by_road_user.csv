@@ -1,0 +1,15 @@
+area,road_user,ksi,pct
+London,"Bus, coach or tram occupant",560.05044,2.9504368920859845
+London,Car occupant,2615.0109,13.776303135422898
+London,Cyclist,5157.2796,27.169388519081334
+London,Goods vehicle occupant,141.01499,0.742889924045299
+London,Motorcyclist,4090.3495,21.548627059958136
+London,"Other (incl. e-scooter, horse rider)",492.0,2.5919360958029145
+London,Pedestrian,5926.24404,31.220418373603437
+Rest of GB,"Bus, coach or tram occupant",1079.25792,0.8696113905437352
+Rest of GB,Car occupant,52359.19421,42.18838781809226
+Rest of GB,Cyclist,15316.24592,12.341055521187197
+Rest of GB,Goods vehicle occupant,3725.45799,3.0017854333616274
+Rest of GB,Motorcyclist,23907.473,19.263431339856933
+Rest of GB,"Other (incl. e-scooter, horse rider)",3465.11963,2.7920179634583486
+Rest of GB,Pedestrian,24255.3221,19.5437105334999

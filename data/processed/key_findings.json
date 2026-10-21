@@ -1,0 +1,195 @@
+{
+  "years": "2021-2025",
+  "n_collisions": 513801,
+  "n_casualties": 652821,
+  "first_year": 2021,
+  "last_year": 2025,
+  "casualties_first": 128209,
+  "casualties_last": 127883,
+  "killed_first": 1558,
+  "killed_last": 1538,
+  "killed_total": 8033,
+  "killed_peak_year": 2022,
+  "killed_peak": 1711,
+  "ksi_reported_first": 24921,
+  "ksi_reported_last": 29296,
+  "ksi_adjusted_first": 26397,
+  "ksi_adjusted_last": 29918,
+  "injury_based_share_first": 49.6,
+  "injury_based_share_last": 86.5,
+  "london_vs_rest_5yr_per_100k_per_year": {
+    "London": {
+      "casualties_per_100k": 284.1,
+      "killed_per_100k": 1.1,
+      "ksi_adjusted_per_100k": 42.1
+    },
+    "Rest of GB": {
+      "casualties_per_100k": 182.6,
+      "killed_per_100k": 2.6,
+      "ksi_adjusted_per_100k": 43.2
+    }
+  },
+  "london_killed_total": 486,
+  "ksi_share_by_road_user_pct": {
+    "London": {
+      "Goods vehicle occupant": 0.7,
+      "Other (incl. e-scooter, horse rider)": 2.6,
+      "Bus, coach or tram occupant": 3.0,
+      "Car occupant": 13.8,
+      "Motorcyclist": 21.5,
+      "Cyclist": 27.2,
+      "Pedestrian": 31.2
+    },
+    "Rest of GB": {
+      "Goods vehicle occupant": 3.0,
+      "Other (incl. e-scooter, horse rider)": 2.8,
+      "Bus, coach or tram occupant": 0.9,
+      "Car occupant": 42.2,
+      "Motorcyclist": 19.3,
+      "Cyclist": 12.3,
+      "Pedestrian": 19.5
+    }
+  },
+  "vulnerable_share_ksi_pct": {
+    "London": 79.9,
+    "Rest of GB": 51.1
+  },
+  "killed_by_road_user_last_year": {
+    "Car occupant": 626,
+    "Motorcyclist": 380,
+    "Pedestrian": 364,
+    "Cyclist": 79,
+    "Goods vehicle occupant": 43,
+    "Other (incl. e-scooter, horse rider)": 38,
+    "Bus, coach or tram occupant": 8
+  },
+  "killed_by_road_user_first_year": {
+    "Car occupant": 681,
+    "Pedestrian": 361,
+    "Motorcyclist": 309,
+    "Cyclist": 111,
+    "Goods vehicle occupant": 61,
+    "Other (incl. e-scooter, horse rider)": 29,
+    "Bus, coach or tram occupant": 6
+  },
+  "vulnerable_share_killed_pct_5yr": 50.4,
+  "escooter_casualties_by_year": {
+    "2021": 1102,
+    "2022": 1154,
+    "2023": 1117,
+    "2024": 1096,
+    "2025": 1162
+  },
+  "escooter_ksi_adjusted_by_year": {
+    "2021": 331,
+    "2022": 355,
+    "2023": 337,
+    "2024": 357,
+    "2025": 420
+  },
+  "peak_slot": "Friday 15:00-15:59",
+  "peak_slot_collisions_per_year": 1534,
+  "ksi_pct_by_hour_max": [
+    0,
+    30.9
+  ],
+  "ksi_pct_by_hour_min": [
+    8,
+    19.4
+  ],
+  "ksi_pct_all": 24.2,
+  "ksi_pct_0000_0559": 30.5,
+  "london_borough_highest_ksi_rate": [
+    [
+      "Westminster",
+      118.3
+    ],
+    [
+      "Kensington and Chelsea",
+      80.4
+    ],
+    [
+      "Lambeth",
+      64.5
+    ]
+  ],
+  "london_borough_lowest_ksi_rate": [
+    [
+      "Harrow",
+      21.2
+    ],
+    [
+      "Barking and Dagenham",
+      26.0
+    ],
+    [
+      "Waltham Forest",
+      26.7
+    ]
+  ],
+  "newham_ksi_per_100k_yr": 33.2,
+  "gb_la_highest_ksi_rate_pop100k_plus": [
+    [
+      "Powys",
+      118.8
+    ],
+    [
+      "Westminster",
+      118.3
+    ],
+    [
+      "East Lindsey",
+      102.1
+    ]
+  ],
+  "gb_la_lowest_ksi_rate_pop100k_plus": [
+    [
+      "Swansea",
+      14.2
+    ],
+    [
+      "Cardiff",
+      15.2
+    ],
+    [
+      "Bridgend",
+      15.6
+    ]
+  ],
+  "model": {
+    "train_years": "2021-2024",
+    "test_year": 2025,
+    "n_train": 412276,
+    "n_test": 101525,
+    "ksi_base_rate_test_pct": 26.2,
+    "results": {
+      "Logistic regression": {
+        "roc_auc": 0.673,
+        "pr_auc": 0.425,
+        "recall": 0.713,
+        "precision": 0.348,
+        "tp": 18998,
+        "fp": 35542,
+        "fn": 7646,
+        "tn": 39339
+      },
+      "Gradient boosting": {
+        "roc_auc": 0.691,
+        "pr_auc": 0.451,
+        "recall": 0.753,
+        "precision": 0.35,
+        "tp": 20070,
+        "fp": 37287,
+        "fn": 6574,
+        "tn": 37594
+      }
+    },
+    "top_features": {
+      "moto": 0.0678,
+      "cyc": 0.0355,
+      "ped": 0.0336,
+      "number_of_casualties": 0.0276,
+      "number_of_vehicles": 0.0268
+    }
+  }
+}
